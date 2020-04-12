@@ -24,3 +24,11 @@ function post()
 
 
 }
+
+function addComment($postId, $author, $comment)
+{
+    $commentManager = new CommentManager();
+    $comments = $commentManager->postComment($postId, $author, $comment);
+        header('Location: ?action=post&id=' . $postId);
+
+}
