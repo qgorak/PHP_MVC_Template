@@ -1,3 +1,5 @@
+
+
 <?php
 require('controller/controller.php');
 
@@ -34,8 +36,10 @@ switch($_GET['action'])
   break;
 
 default:
-  listPosts(); ;
+  listPosts();
   break;
   //test
 }
+}else{
+    listPosts();
 }
